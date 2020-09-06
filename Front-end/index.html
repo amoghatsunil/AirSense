@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>AirSense-IoT and AI based Air quality Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+            <img src="images/logo.jpg">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Show me HeatMap</a></li>
+                    <li><a href="#">Beacon Data</a></li>
+                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Post a picture/issue</a></li>
+                    <li><a href="#">Login/Signup</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="images/earth.png" class="center">
+            <div id="circle">
+                <div class="features one">
+                    <img src="images/polution.png">
+                    <div>
+                        <h1>Post</h1>
+                        <p>Post any pictures and your issues regarding environment,air quality and pollution</p>
+                        
+                    </div>
+                </div>
+                <div class="features two">
+                    <img src="images/predict.png">
+                    <div>
+                        <h1>Beacon</h1>
+                        <p>Get all the information about air quality in one place </p>
+                        
+                    </div>
+                </div>
+                <div class="features three">
+                    <img src="images/donate.png">
+                    <div>
+                        <h1>Predict</h1>
+                        <p>Want to know about future metrics like temperature humidity in realtime? Kudos you are at the right place!!</p>
+                    </div>
+                </div>
+                <div class="features four">
+                    <img src="images/heatmap.png">
+                    <div>
+                        <h1>Iot and AI</h1>
+                        <p>Combining the power of AI and IoT we have made a real time air quality Monitor </p>
+                        
+                    </div>
+                </div>
+            </div>   
+        </div>
+         
+        <div class="controls">
+        <img src="images/arrow.png" id="upbtn">
+        <h3>Features</h3>
+        <img src="images/arrow.png" id="downbtn">
+        </div>
+         
+    </div>
+    
+    <Script>
+        var circle =document.getElementById("circle");
+        var upbtn =document.getElementById("upbtn");
+        var downbtn =document.getElementById("downbtn");
+        var rotateValue=circle.style.transform;
+        var rotateSum;
+        
+        upbtn.onclick=function()
+        {
+            rotateSum=rotateValue+"rotate(-90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+        downbtn.onclick=function()
+        {
+            rotateSum=rotateValue+"rotate(-90deg)";
+            circle.style.transform=rotateSum;
+            rotateValue=rotateSum;
+        }
+    </Script>
+    
+</body>
+
+
+</html>
